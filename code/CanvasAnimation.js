@@ -1,0 +1,335 @@
+
+function CanvasDisplay(){
+  this.canvas = document.createElement('canvas');
+  this.canvas.width = '700';
+  this.canvas.height = '700';
+  this.canvas.style = 'border:1px solid #005BAB;background-color:#ADD8E6;'
+}
+
+var canvas = document.getElementById('Canvas');
+    var context = canvas.getContext('2d'), shape2 = canvas.getContext('2d');
+
+    var acorn = function (dx, dy) {
+        // rand drawing drawing
+        context.clearRect(0, 0, context.canvas.width, context.canvas.height);
+        context.translate(dx, dy); /// translate (move)
+
+           context.fillStyle="rgb(183,144,92)";
+context.lineStyle="rgb(56,31,4)";
+context.fillStyle="rgb(183,144,92)";
+context.lineStyle="rgb(56,31,4)";
+context.lineWidth=1;
+context.beginPath();
+context.moveTo(50,-19);
+context.bezierCurveTo(50,-19,41,-13,41,-6);
+context.bezierCurveTo(41,-6,38,-11,33,-12);
+context.bezierCurveTo(28,-13,9,-7,9,-31);
+context.bezierCurveTo(9,-66,55,-47,55,-47);
+context.bezierCurveTo(58,-41,64,-27,50,-19);
+context.fill();
+context.stroke();
+
+context.fillStyle="rgb(132,101,64)";
+context.lineStyle="rgb(56,31,4)";
+context.lineWidth=1;
+context.beginPath();
+context.moveTo(9,-31);
+context.bezierCurveTo(9,-31,-6,-42,12,-53);
+context.lineTo(22,-58);
+context.bezierCurveTo(22,-58,17,-69,11,-71);
+context.lineTo(15,-77);
+context.bezierCurveTo(15,-77,28,-63,28,-61);
+context.bezierCurveTo(29,-59,61,-76,55,-47);
+context.bezierCurveTo(30,-48,9,-30,9,-31);
+context.fill();
+context.stroke();
+
+context.fillStyle="rgb(255,255,255)";
+context.lineStyle="rgb(56,31,4)";
+context.lineWidth=1;
+context.beginPath();
+context.moveTo(49,-61);
+context.fill();
+context.stroke();
+
+context.lineStyle="rgb(56,31,4)";
+context.lineWidth=1;
+context.beginPath();
+context.moveTo(56,-46);
+context.stroke();
+
+
+
+
+        
+        context.translate(-dx, -dy); /// translate (move)
+    };
+
+var shape = function(ax,ay) {
+  //context.clearRect(0, 0, context.canvas.width, context.canvas.height);
+    
+        context.translate(ax, ay); /// translate (move)
+
+             context.fillStyle="rgb(117,32,3)";
+ context.lineStyle="rgb(0,0,0)";
+ context.lineWidth=2;
+ context.beginPath();
+ context.moveTo(228,-156);
+ context.bezierCurveTo(217,-153,205,-179,205,-179);
+ context.bezierCurveTo(205,-179,201,-164,205,-160);
+ context.bezierCurveTo(208,-155,201,-145,201,-145);
+ context.fill();
+ context.stroke();
+
+ context.fillStyle="rgb(117,32,3)";
+ context.lineStyle="rgb(0,0,0)";
+ context.lineWidth=2;
+ context.beginPath();
+ context.moveTo(253,-168);
+ context.bezierCurveTo(253,-168,261,-185,261,-196);
+ context.bezierCurveTo(262,-206,265,-176,274,-178);
+ context.fill();
+ context.stroke();
+
+ context.fillStyle="rgb(117,32,3)";
+ context.lineStyle="rgb(0,0,0)";
+ context.lineWidth=2;
+ context.beginPath();
+ context.moveTo(330,-231);
+ context.lineTo(333,-203);
+ context.bezierCurveTo(333,-203,336,-185,297,-165);
+ context.bezierCurveTo(257,-145,268,-150,242,-143);
+ context.bezierCurveTo(217,-135,198,-128,168,-160);
+ context.bezierCurveTo(168,-160,187,-144,213,-154);
+ context.bezierCurveTo(238,-165,231,-187,231,-187);
+ context.bezierCurveTo(231,-187,241,-167,262,-176);
+ context.bezierCurveTo(268,-178,271,-181,274,-184);
+ context.bezierCurveTo(281,-192,278,-202,278,-202);
+ context.bezierCurveTo(278,-202,287,-175,308,-184);
+ context.bezierCurveTo(330,-192,334,-207,326,-212);
+ context.bezierCurveTo(319,-217,319,-228,321,-228);
+ context.bezierCurveTo(323,-228,324,-236,330,-231);
+ context.fill();
+ context.stroke();
+        
+        context.translate(-ax, -ay); /// translate (move)
+    };
+
+    var leaf = function(ax,ay){
+
+      context.translate(ax,ay);
+
+            context.fillStyle="rgb(239,148,27)";
+            context.lineStyle="rgb(63,28,4)";
+            context.lineWidth=1;
+            context.beginPath();
+            context.moveTo(3,4);
+            context.lineTo(14,13);
+            context.bezierCurveTo(14,13,49,21,65,45);
+            context.bezierCurveTo(82,69,76,109,76,109);
+            context.bezierCurveTo(76,109,33,88,26,78);
+            context.bezierCurveTo(21,70,13,55,14,43);
+            context.bezierCurveTo(16,14,3,4,3,4);
+            context.fill();
+            context.stroke();
+
+            context.translate(-ax,-ay);
+      };
+
+
+       var leaf2 = function(ax,ay){
+
+      context.translate(ax,ay);
+
+            context.fillStyle="rgb(117,20,20)";
+context.lineStyle="rgb(63,28,4)";
+context.lineWidth=1;
+context.beginPath();
+context.moveTo(366,189);
+context.bezierCurveTo(366,189,359,183,348,154);
+context.bezierCurveTo(337,126,335,126,335,126);
+context.bezierCurveTo(335,126,323,135,303,138);
+context.bezierCurveTo(283,141,274,147,274,147);
+context.bezierCurveTo(274,147,274,141,280,137);
+context.bezierCurveTo(285,133,248,121,228,123);
+context.bezierCurveTo(208,124,200,135,200,135);
+context.bezierCurveTo(200,135,212,111,244,99);
+context.bezierCurveTo(275,87,243,83,244,67);
+context.bezierCurveTo(246,50,241,51,241,51);
+context.lineTo(251,57);
+context.bezierCurveTo(251,57,244,24,222,28);
+context.bezierCurveTo(222,28,242,21,255,33);
+context.bezierCurveTo(255,33,266,31,273,39);
+context.bezierCurveTo(273,39,283,43,281,36);
+context.bezierCurveTo(281,36,308,46,314,48);
+context.lineTo(327,34);
+context.bezierCurveTo(327,34,336,11,356,0);
+context.bezierCurveTo(356,0,344,35,352,45);
+context.bezierCurveTo(360,55,368,62,362,73);
+context.bezierCurveTo(362,73,371,76,380,77);
+context.bezierCurveTo(380,77,360,105,355,105);
+context.bezierCurveTo(350,105,337,122,337,122);
+context.lineTo(366,189);
+context.fill();
+context.stroke();
+
+
+
+            context.translate(-ax,-ay);
+      };
+    
+    var fall = function(ax,ay){
+
+      context.translate(ax,ay);
+
+             context.fillStyle="rgb(249,169,8)";
+ context.beginPath();
+ context.moveTo(114,-384);
+ context.bezierCurveTo(108,-376,108,-392,108,-394);
+ context.bezierCurveTo(108,-397,108,-397,107,-399);
+ context.bezierCurveTo(106,-401,108,-405,108,-408);
+ context.bezierCurveTo(108,-410,106,-413,108,-415);
+ context.bezierCurveTo(110,-418,118,-417,121,-417);
+ context.bezierCurveTo(124,-417,129,-418,129,-414);
+ context.bezierCurveTo(129,-409,118,-411,114,-410);
+ context.bezierCurveTo(114,-408,114,-406,114,-404);
+ context.bezierCurveTo(118,-404,127,-407,128,-403);
+ context.bezierCurveTo(130,-397,117,-398,114,-398);
+ context.bezierCurveTo(114,-394,116,-387,114,-384);
+ context.bezierCurveTo(113,-383,114,-384,114,-384);
+ context.fill();
+
+ context.fillStyle="rgb(249,169,8)";
+ context.beginPath();
+ context.moveTo(160,-386);
+ context.bezierCurveTo(159,-379,154,-384,153,-388);
+ context.bezierCurveTo(152,-392,153,-394,148,-394);
+ context.bezierCurveTo(144,-394,139,-396,138,-391);
+ context.bezierCurveTo(137,-389,134,-378,130,-385);
+ context.bezierCurveTo(128,-389,134,-401,135,-405);
+ context.bezierCurveTo(137,-409,138,-414,141,-417);
+ context.bezierCurveTo(145,-423,152,-410,153,-407);
+ context.bezierCurveTo(155,-404,155,-401,158,-400);
+ context.bezierCurveTo(160,-400,161,-398,161,-396);
+ context.bezierCurveTo(160,-393,158,-396,159,-392);
+ context.bezierCurveTo(159,-390,160,-388,160,-386);
+ context.fill();
+
+ context.fillStyle="rgb(249,249,249)";
+ context.beginPath();
+ context.moveTo(149,-400);
+ context.bezierCurveTo(148,-404,146,-407,144,-410);
+ context.bezierCurveTo(143,-407,142,-404,141,-400);
+ context.bezierCurveTo(143,-400,146,-400,149,-400);
+ context.bezierCurveTo(148,-402,148,-400,149,-400);
+ context.fill();
+
+ context.fillStyle="rgb(249,169,8)";
+ context.beginPath();
+ context.moveTo(184,-390);
+ context.bezierCurveTo(188,-388,186,-383,182,-383);
+ context.bezierCurveTo(178,-383,173,-383,169,-383);
+ context.bezierCurveTo(161,-383,164,-395,164,-400);
+ context.bezierCurveTo(164,-403,162,-418,167,-417);
+ context.bezierCurveTo(173,-417,170,-394,170,-389);
+ context.bezierCurveTo(175,-389,179,-390,184,-390);
+ context.fill();
+
+ context.fillStyle="rgb(249,169,8)";
+ context.beginPath();
+ context.moveTo(210,-390);
+ context.bezierCurveTo(214,-388,212,-383,208,-383);
+ context.bezierCurveTo(204,-383,199,-383,195,-383);
+ context.bezierCurveTo(187,-383,190,-395,190,-400);
+ context.bezierCurveTo(190,-403,188,-418,193,-417);
+ context.bezierCurveTo(199,-417,196,-394,196,-389);
+ context.bezierCurveTo(201,-389,205,-390,210,-390);
+ context.fill();
+
+
+
+
+            context.translate(-ax,-ay);
+      };
+
+ var drawTree = function(ax,ay){
+
+      //context.translate(ax,ay);
+
+context.fillStyle="rgb(79,42,11)";
+context.lineStyle="rgb(79,42,11)";
+context.lineWidth=1;
+context.beginPath();
+context.moveTo(-94,-107);
+context.bezierCurveTo(-94,-107,-13,-9,41,-9);
+context.bezierCurveTo(97,-9,144,-17,199,-37);
+context.bezierCurveTo(199,-37,113,-14,248,16);
+context.bezierCurveTo(248,16,113,-14,52,7);
+context.bezierCurveTo(52,7,221,60,266,60);
+context.bezierCurveTo(310,60,390,89,473,24);
+context.lineTo(404,77);
+context.bezierCurveTo(404,77,533,117,533,140);
+context.bezierCurveTo(533,140,437,85,407,102);
+context.lineTo(465,164);
+context.bezierCurveTo(465,164,490,162,496,181);
+context.lineTo(471,181);
+context.bezierCurveTo(471,181,493,200,473,227);
+context.bezierCurveTo(473,227,475,160,382,111);
+context.bezierCurveTo(382,111,124,9,249,121);
+context.bezierCurveTo(249,121,227,96,72,49);
+context.bezierCurveTo(72,49,80,104,130,136);
+context.bezierCurveTo(130,136,85,143,38,41);
+context.bezierCurveTo(38,41,-55,9,-80,-11);
+context.bezierCurveTo(-105,-33,-94,-107,-94,-107);
+context.fill();
+context.stroke();
+
+
+
+
+
+            //context.translate(-ax,-ay);
+      };
+      //try adding an array with the dx and ax values to randomly assign to shapes
+         /// example / demo
+        var dx = 0, dy = 0;
+        var ax = 0, ay = 5;
+        var radian = 0;
+        var radianDirection = true;
+        /*var rgb = {
+          r: 0,
+          g: 0,
+          b: 0
+        };*/
+        
+        function executeFrame() {
+            dx++;
+            dy++;
+
+            if(radianDirection) {
+              radian += 0.01;
+            } else {
+              radian -= 0.01;
+            }
+            if(radian > 1) { radianDirection = false; }
+            if(radian < 0) { radianDirection = true; }
+            ax = 500 * Math.sin(radian);
+            ay = ay + (Math.random()*2);//ay++;
+            if (dx > context.canvas.width) dx = 0;
+            if (dy > context.canvas.height) dy = 0;
+            if (ax > context.canvas.width) ax = 0;
+            if (ay > context.canvas.height) ay = 5;
+
+            acorn(dx, dy);
+            shape(ax,ay);
+            leaf(ax,ay);
+            leaf2(ax,ay);
+            fall(ax,ay);
+            drawTree(ax,ay);
+
+            requestAnimationFrame(executeFrame);
+        }
+
+        //start animation
+
+        executeFrame();

@@ -1,0 +1,30 @@
+.background    { background: black;
+                 table-layout: fixed;
+                 border-spacing: 0;   }
+.background td { padding: 0;          }
+.lava          { background: rgb(124, 252, 0); }
+.wall          { background: rgb(172,145,117);   }
+.spaceship	   { background: gray;}
+
+.actor  { position: absolute;  }
+.coin   { background: white; }
+.alien  {background: url("../images/ezgif.com-resize-2.gif"); }
+.player { background: url("../images/ezgif.com-resize.gif"); }
+
+.game {
+  overflow: hidden;
+  max-width: 600px;
+  max-height: 450px;
+  position: relative;
+}
+
+.lost .player {
+  background: black;
+  box-shadow: -4px -7px 8px green, 4px -7px 8px green;
+}
+.won .player {
+  box-shadow: -4px -7px 8px white, 4px -7px 8px white;
+}
+.win {
+	background: url ("http://nairabrains.com/wp-content/uploads/2011/11/You-Win.jpg");
+}
